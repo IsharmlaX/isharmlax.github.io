@@ -1944,8 +1944,8 @@
 <li>Computational Photography</li>
 </ul>
 <h3 id="12-api">1.2 API<a class="headerlink" href="#12-api" title="Permanent link">&para;</a></h3>
-<p>API 可以分为两类
-- Graphics APIs : 渲染输出
+<p>API 可以分为两类<br />
+- Graphics APIs : 渲染输出<br />
 - User-interface APIs : 用户输入</p>
 <h3 id="13-graphics-pipeline">1.3 Graphics Pipeline<a class="headerlink" href="#13-graphics-pipeline" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1956,9 +1956,9 @@
 <li>4D 坐标</li>
 </ul>
 <h3 id="14-numerical-issues">1.4 Numerical Issues<a class="headerlink" href="#14-numerical-issues" title="Permanent link">&para;</a></h3>
-<p>IEEE Floating Point 标准规定了三个特殊值
-- <code>+inf</code>
-- <code>-inf</code>
+<p>IEEE Floating Point 标准规定了三个特殊值<br />
+- <code>+inf</code><br />
+- <code>-inf</code><br />
 - <code>NaN</code></p>
 <p>这三个特殊值能够参与数值运算和布尔运算。</p>
 <h3 id="15-graphics-program">1.5 Graphics Program<a class="headerlink" href="#15-graphics-program" title="Permanent link">&para;</a></h3>
@@ -2001,9 +2001,9 @@
 <h3 id="22-solving-quadratic-equations">2.2 Solving Quadratic Equations<a class="headerlink" href="#22-solving-quadratic-equations" title="Permanent link">&para;</a></h3>
 <p>二次方程的解。</p>
 <h3 id="23-trigonometry">2.3 Trigonometry<a class="headerlink" href="#23-trigonometry" title="Permanent link">&para;</a></h3>
-<p>三角学
-- 角度(angles)
-- 三角函数
+<p>三角学<br />
+- 角度(angles)<br />
+- 三角函数<br />
 - 海伦公式</p>
 <h3 id="24-vectors">2.4 Vectors<a class="headerlink" href="#24-vectors" title="Permanent link">&para;</a></h3>
 <ul>
@@ -2030,93 +2030,93 @@
 <li>参数方程</li>
 </ul>
 <h3 id="26-linear-interpolation">2.6 Linear Interpolation<a class="headerlink" href="#26-linear-interpolation" title="Permanent link">&para;</a></h3>
-<p>线性插值
-对于给定的两个点 A、B，从 A 到 B 的线性插值为
-$$
+<p>线性插值<br />
+对于给定的两个点 A、B，从 A 到 B 的线性插值为</p>
+<div class="arithmatex">\[
 f(t) = tA + (1-t)B
-$$</p>
+\]</div>
 <h3 id="27-triangles">2.7 Triangles<a class="headerlink" href="#27-triangles" title="Permanent link">&para;</a></h3>
 <p>三角形的顶点会存储颜色等信息，渲染时三角形面上的信息由顶点信息线性插值得到，这一插值方式叫 <strong>重心坐标(barycentric coordinates)</strong> 。</p>
 <h4 id="271-2d-triangles">2.7.1 2D Triangles<a class="headerlink" href="#271-2d-triangles" title="Permanent link">&para;</a></h4>
-<p>对于给定的平面三角形，记三个顶点分别是 A、B、C
-$$
-S = \frac{1}{2} || AB \times AC ||
+<p>对于给定的平面三角形，记三个顶点分别是 A、B、C<br />
+$$<br />
+S = \frac{1}{2} || AB \times AC ||<br />
 $$</p>
-<p>在重心坐标系下，平面上任意一点都可以用三角形顶点唯一表示
-$$
-P = \alpha A + \beta B + \gamma C \quad (\alpha+\beta+\gamma=1)
+<p>在重心坐标系下，平面上任意一点都可以用三角形顶点唯一表示<br />
+$$<br />
+P = \alpha A + \beta B + \gamma C \quad (\alpha+\beta+\gamma=1)<br />
 $$</p>
-<p>重心坐标有一些良好的性质：
-- 平面上一点 P 在三角形内部，当且仅当 <span class="arithmatex">\(\alpha, \beta, \gamma \in(0,1)\)</span>
-    - 一者为 0 时，P 在三角形边上
-    - 二者为 0 时，P 是三角形顶点
-- 三角形重心 G 满足 <span class="arithmatex">\(\alpha=\beta=\gamma=\frac{1}{3}\)</span>
-- 记 <span class="arithmatex">\(S_{PBC}\)</span> 表示 <span class="arithmatex">\(\Delta PBC\)</span> 的有向面积，则 <span class="arithmatex">\(\alpha= \frac{S_{PBC}}{S_{ABC}}\)</span> ，其余同理
+<p>重心坐标有一些良好的性质：<br />
+- 平面上一点 P 在三角形内部，当且仅当 <span class="arithmatex">\(\alpha, \beta, \gamma \in(0,1)\)</span><br />
+    - 一者为 0 时，P 在三角形边上<br />
+    - 二者为 0 时，P 是三角形顶点<br />
+- 三角形重心 G 满足 <span class="arithmatex">\(\alpha=\beta=\gamma=\frac{1}{3}\)</span><br />
+- 记 <span class="arithmatex">\(S_{PBC}\)</span> 表示 <span class="arithmatex">\(\Delta PBC\)</span> 的有向面积，则 <span class="arithmatex">\(\alpha= \frac{S_{PBC}}{S_{ABC}}\)</span> ，其余同理<br />
 - 记 <span class="arithmatex">\(f_{BC}(P)\)</span> 表示 P 到 BC 的有向距离，则 <span class="arithmatex">\(\alpha = \frac{f_{BC}(P)}{f_{BC}(A)}\)</span> ，其余同理</p>
 <h4 id="272-3d-triangles">2.7.2 3D Triangles<a class="headerlink" href="#272-3d-triangles" title="Permanent link">&para;</a></h4>
 <p>2D 三角形的重心坐标可以很好地推广到 3D ，包括有向面积和有向距离的公式。</p>
-<p>除了这些，还可以使用外积计算，这可以由有向面积直接推导得来
-$$
-\begin{align} 
-n_{a}  &amp; = (C-B) \times (P-B) \
-\alpha  &amp; =  \frac{n \cdot n_{a}}{||n||^2}
-\end{align}
+<p>除了这些，还可以使用外积计算，这可以由有向面积直接推导得来<br />
+$$<br />
+\begin{align} <br />
+n_{a}  &amp; = (C-B) \times (P-B) \<br />
+\alpha  &amp; =  \frac{n \cdot n_{a}}{||n||^2}<br />
+\end{align}<br />
 $$</p>
 <p>这里的关键在于保证采用相同的正方向，例如 ABC 的面积采用 <span class="arithmatex">\(AB \times AC\)</span> ，则 PBC 的面积就要用 <span class="arithmatex">\(PB \times PC\)</span> ，保证 P 在形内时，PBC 面积符号与 ABC 相同。</p>
 <h2 id="3-raster-images">3 Raster Images<a class="headerlink" href="#3-raster-images" title="Permanent link">&para;</a></h2>
 <p><strong>光栅图像(Raster Images)</strong> 又称 <strong>位图图像(Bitmap Images)</strong> ，图像由长方形的像素矩阵构成，每个像素存储一定颜色信息。</p>
 <blockquote>
-<p>这里需要区分 <strong>图像像素(Image Pixels)</strong> 和 <strong>显示像素(Display Pixels)</strong> 
+<p>这里需要区分 <strong>图像像素(Image Pixels)</strong> 和 <strong>显示像素(Display Pixels)</strong> <br />
 图像像素是图像文件被存储的形式，而显示像素是显示设备能够调用的像素。由于图片本身可能被缩放或旋转，因此图像像素和显示像素间可能不是一一对应关系。当谈论光栅图像时，这是一个与设备无关的事物。而显示设备是一种近似光栅图像的方式。</p>
 </blockquote>
 <h3 id="31-raster-devices">3.1 Raster Devices<a class="headerlink" href="#31-raster-devices" title="Permanent link">&para;</a></h3>
-<p>栅格设备可以分为
+<p>栅格设备可以分为<br />
 - Output<br />
     - Display<br />
-        - Transmissive: liquid crystal display (LCD) 
-            - 像素本身不发光，控制透光量
-            - 通过中心晶体的偏振角度控制透光
+        - Transmissive: liquid crystal display (LCD) <br />
+            - 像素本身不发光，控制透光量<br />
+            - 通过中心晶体的偏振角度控制透光<br />
         - Emissive: light-emitting diode (LED) display<br />
-            - 像素本身发光，控制发光量
-            - 像素可以分为亚像素(subpixels) ，分别对应不同颜色 RGB
-        - 对于显示类输出设备，<strong>分辨率(resolution)</strong> 是像素的数量
+            - 像素本身发光，控制发光量<br />
+            - 像素可以分为亚像素(subpixels) ，分别对应不同颜色 RGB<br />
+        - 对于显示类输出设备，<strong>分辨率(resolution)</strong> 是像素的数量<br />
     - Hardcopy<br />
-        - Binary: ink-jet printer 
+        - Binary: ink-jet printer <br />
         - Continuous tone: dye sublimation printer<br />
-        - 对于打印类输出设备，分辨率是像素的密度而非数量
+        - 对于打印类输出设备，分辨率是像素的密度而非数量<br />
 - Input<br />
-    - 输入设备需要对每个像素进行光线测量，这通常通过传感器序列实现
-    - 2D array sensor: digital camera 
-        - 传感器构成二维矩阵，每个传感器测量一个像素
-        - 传感器只能测量光强不能测量波长
-            - <strong>Demosaicking</strong> : 一个像素只测量一个颜色，不同颜色相间排列，由软件负责填补缺失的部分
-            - 每个像素用三个传感器测量 RGB
+    - 输入设备需要对每个像素进行光线测量，这通常通过传感器序列实现<br />
+    - 2D array sensor: digital camera <br />
+        - 传感器构成二维矩阵，每个传感器测量一个像素<br />
+        - 传感器只能测量光强不能测量波长<br />
+            - <strong>Demosaicking</strong> : 一个像素只测量一个颜色，不同颜色相间排列，由软件负责填补缺失的部分<br />
+            - 每个像素用三个传感器测量 RGB<br />
     - 1D array sensor: flatbed scanner</p>
 <h3 id="32-images-pixels-and-geometry">3.2 Images, Pixels and Geometry<a class="headerlink" href="#32-images-pixels-and-geometry" title="Permanent link">&para;</a></h3>
-<p>现实图像可以被抽象为二维位置的函数
-$$
-I(x,y) : R \to V
-$$
-其中
-- <span class="arithmatex">\(R \subseteq \mathbb{R}^2\)</span> 表示一个图像平面
-- <span class="arithmatex">\(V\)</span> 表示所有可能的取值
-    - 灰度图 <span class="arithmatex">\(V=\mathbb{R}^+\)</span>
+<p>现实图像可以被抽象为二维位置的函数<br />
+$$<br />
+I(x,y) : R \to V<br />
+$$<br />
+其中<br />
+- <span class="arithmatex">\(R \subseteq \mathbb{R}^2\)</span> 表示一个图像平面<br />
+- <span class="arithmatex">\(V\)</span> 表示所有可能的取值<br />
+    - 灰度图 <span class="arithmatex">\(V=\mathbb{R}^+\)</span><br />
     - RGB 图 <span class="arithmatex">\(V = (\mathbb{R}^+)^3\)</span></p>
 <p>注意现实图像是模拟信号，值是连续的而非离散的。</p>
-<p>输入设备，例如相机，对现实图像采样得到离散的像素网格，每个像素的值都是一块现实区域内值的平均，最终得到栅格图像(Raster Images)。
-输出设备对栅格图像进行采样和平均，得到显示图像(Display Images)。
+<p>输入设备，例如相机，对现实图像采样得到离散的像素网格，每个像素的值都是一块现实区域内值的平均，最终得到栅格图像(Raster Images)。<br />
+输出设备对栅格图像进行采样和平均，得到显示图像(Display Images)。<br />
 图像成为一种采样表示。</p>
-<p>在本书中，像素坐标系的原点在图像左下角，水平为 x 轴，竖直为 y 轴，像素坐标是二维非负整数坐标。
-$$
-P = { (i,j) |\ i\in { 0, 1, \dots,n_{x}-1 },j\in { 0,1,\dots,n_{y}-1 } }
-$$
-每个像素点对应一片以该点为中心的区域
-$$
-(i,j) \sim [i-0.5,i+0.5] \times [j-0.5,j+0.5]
-$$
-完整的区域为
-$$
-R = [-0.5, n_{x}-0.5] \times[-0.5,n_{y}-0.5]
+<p>在本书中，像素坐标系的原点在图像左下角，水平为 x 轴，竖直为 y 轴，像素坐标是二维非负整数坐标。<br />
+$$<br />
+P = { (i,j) |\ i\in { 0, 1, \dots,n_{x}-1 },j\in { 0,1,\dots,n_{y}-1 } }<br />
+$$<br />
+每个像素点对应一片以该点为中心的区域<br />
+$$<br />
+(i,j) \sim [i-0.5,i+0.5] \times [j-0.5,j+0.5]<br />
+$$<br />
+完整的区域为<br />
+$$<br />
+R = [-0.5, n_{x}-0.5] \times[-0.5,n_{y}-0.5]<br />
 $$</p>
 <h4 id="321-pixel-values">3.2.1 Pixel Values<a class="headerlink" href="#321-pixel-values" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2134,52 +2134,52 @@ $$</p>
 </ul>
 </li>
 </ul>
-<p>几种常见的像素值
-- 1-bit Grayscale
-    - 只取 0/1
-- 8-bits LDR RGB 
-- 16-bits fixed-range Grayscale
-- 16-bits HDR RGB
+<p>几种常见的像素值<br />
+- 1-bit Grayscale<br />
+    - 只取 0/1<br />
+- 8-bits LDR RGB <br />
+- 16-bits fixed-range Grayscale<br />
+- 16-bits HDR RGB<br />
 - 32-bits HDR RGB</p>
-<p>减少存储所使用的空间会导致
-- Clipped : 超过上下界的数值被裁剪
+<p>减少存储所使用的空间会导致<br />
+- Clipped : 超过上下界的数值被裁剪<br />
 - Quantization / Banding : 精度减小导致舍入</p>
 <h4 id="322-monitor-intensity-and-gamma">3.2.2 Monitor Intensity and Gamma<a class="headerlink" href="#322-monitor-intensity-and-gamma" title="Permanent link">&para;</a></h4>
 <p>显示器接收一个像素值作为输入，并将其转化为光强输出。</p>
-<p>通常输入和输出间遵循以下形式的公式：
-$$
-I = I_{max}v^\gamma
-$$
+<p>通常输入和输出间遵循以下形式的公式：<br />
+$$<br />
+I = I_{max}v^\gamma<br />
+$$<br />
 其中，<span class="arithmatex">\(I_{max}\)</span> 是最大光强，<span class="arithmatex">\(v\)</span> 是输入，<span class="arithmatex">\(I\)</span> 是输出光强，<span class="arithmatex">\(\gamma\)</span> 是非线性程度。</p>
-<p>为了适配显示器的这种非线性，图像信息在编码时会进行 <strong>Gamma Correct/Gamma Encoding</strong>
-$$
-v' = v^{1/\gamma}
+<p>为了适配显示器的这种非线性，图像信息在编码时会进行 <strong>Gamma Correct/Gamma Encoding</strong><br />
+$$<br />
+v' = v^{1/\gamma}<br />
 $$</p>
 <blockquote>
-<p>输入与输出间的非线性关系最初并不是认为设计的，而是 CRT 显示器的物理特性。现代 LCD、OLED 虽然原理不同，但为兼容已有标准，也会模拟 Gamma 特性。
+<p>输入与输出间的非线性关系最初并不是认为设计的，而是 CRT 显示器的物理特性。现代 LCD、OLED 虽然原理不同，但为兼容已有标准，也会模拟 Gamma 特性。<br />
 另一方面，人眼对光强的感知也是非线性的，对暗部的感知比亮部更精细，采用非线性存储能够增加暗部信息精度。</p>
 </blockquote>
 <h3 id="33-rgb-color">3.3 RGB Color<a class="headerlink" href="#33-rgb-color" title="Permanent link">&para;</a></h3>
-<p>RGB 颜色通过红、绿、蓝三种颜色来组合任意颜色
-- red + green = yellow
-- green + blue = cyan
-- blue + red = magenta,
+<p>RGB 颜色通过红、绿、蓝三种颜色来组合任意颜色<br />
+- red + green = yellow<br />
+- green + blue = cyan<br />
+- blue + red = magenta,<br />
 - red + green + blue = white</p>
 <p>RGB 空间 <span class="arithmatex">\(\{ (r,g,b)|\ r, g, b \in [0,1] \}\)</span> 。</p>
 <p>RGB 值同样进行 Gamma Encoding 。</p>
 <h3 id="34-alpha-compositing">3.4 Alpha Compositing<a class="headerlink" href="#34-alpha-compositing" title="Permanent link">&para;</a></h3>
 <p>不透明的图像覆盖另一张图像，可以直接覆写像素值。但半透明的图像叠加到另一张图像上，需要混合两张图像的像素值。另一种情况是两个物体都是不透明的，但是同一像素内同时出现两个物体，若只取一个物体的像素值，则容易出现边缘锯齿。</p>
-<p>混合公式是
-$$
-c = \alpha c_{1} + (1-\alpha)c_{2}
-$$
-- 半透明物体混合，<span class="arithmatex">\(\alpha\)</span> 表示物体1的透明度
+<p>混合公式是<br />
+$$<br />
+c = \alpha c_{1} + (1-\alpha)c_{2}<br />
+$$<br />
+- 半透明物体混合，<span class="arithmatex">\(\alpha\)</span> 表示物体1的透明度<br />
 - 不透明物体混合，<span class="arithmatex">\(\alpha\)</span> 表示物体1在像素中的占比</p>
 <p>图像像素的 <span class="arithmatex">\(\alpha\)</span> 值可以单独用一张灰度图存储，被称为 <strong>Alpha Mask</strong> 或 <strong>Transparency Mask</strong> ，或作为 RGB 的第四个维度，被称为 <strong>Alpha Channel</strong> 。</p>
 <h2 id="4-ray-tracing">4 Ray Tracing<a class="headerlink" href="#4-ray-tracing" title="Permanent link">&para;</a></h2>
-<p><strong>渲染(Rendering)</strong> 输入一组三维物体，输出一组二维像素。
-- Object-order Rendering : 依次考虑各个物体，计算对每个像素的贡献
-- Image-order Rendering : 依次考虑每个像素，计算各个物体对其贡献
+<p><strong>渲染(Rendering)</strong> 输入一组三维物体，输出一组二维像素。<br />
+- Object-order Rendering : 依次考虑各个物体，计算对每个像素的贡献<br />
+- Image-order Rendering : 依次考虑每个像素，计算各个物体对其贡献<br />
 后者更加常见也更加灵活。</p>
 <p><strong>光线追踪(Ray Tracing)</strong> 是一种 Image-order Rendering 算法。</p>
 <h3 id="41-the-basic-ray-tracing-algorithm">4.1 The Basic Ray-Tracing Algorithm<a class="headerlink" href="#41-the-basic-ray-tracing-algorithm" title="Permanent link">&para;</a></h3>
@@ -2207,91 +2207,91 @@ $$
 </li>
 </ul>
 <h3 id="43-computing-viewing-rays">4.3 Computing Viewing Rays<a class="headerlink" href="#43-computing-viewing-rays" title="Permanent link">&para;</a></h3>
-<p>从视点 <span class="arithmatex">\(\mathbf{e}\)</span> 向像素点 <span class="arithmatex">\(\mathbf{s}\)</span> 引的射线的参数方程为
-$$
-\mathbf{p}(t) = \mathbf{e} + t(\mathbf{s}-\mathbf{e})
+<p>从视点 <span class="arithmatex">\(\mathbf{e}\)</span> 向像素点 <span class="arithmatex">\(\mathbf{s}\)</span> 引的射线的参数方程为<br />
+$$<br />
+\mathbf{p}(t) = \mathbf{e} + t(\mathbf{s}-\mathbf{e})<br />
 $$</p>
-<p><strong>相机坐标系(Camera Frame)</strong>
-- 记相机所朝方向作为前方 <span class="arithmatex">\(-\mathbf{w}\)</span> 
-- 选取大致的上方 <span class="arithmatex">\(\mathbf{v'}\)</span> ，这不一定与 <span class="arithmatex">\(\mathbf{w}\)</span> 垂直，需要施密特正交化
-- 求 <span class="arithmatex">\(\mathbf{u} = \mathbf{v}' \times \mathbf{w}\)</span>  作为右方
-- 求 <span class="arithmatex">\(\mathbf{v} = \mathbf{w}\times \mathbf{u}\)</span> 作为上方
+<p><strong>相机坐标系(Camera Frame)</strong><br />
+- 记相机所朝方向作为前方 <span class="arithmatex">\(-\mathbf{w}\)</span> <br />
+- 选取大致的上方 <span class="arithmatex">\(\mathbf{v'}\)</span> ，这不一定与 <span class="arithmatex">\(\mathbf{w}\)</span> 垂直，需要施密特正交化<br />
+- 求 <span class="arithmatex">\(\mathbf{u} = \mathbf{v}' \times \mathbf{w}\)</span>  作为右方<br />
+- 求 <span class="arithmatex">\(\mathbf{v} = \mathbf{w}\times \mathbf{u}\)</span> 作为上方<br />
 - <span class="arithmatex">\(\mathbf{u}, \mathbf{v}, \mathbf{w}\)</span> 构成右手坐标系的正交基，分别代表右方，上方，后方</p>
 <h4 id="431-orthographic-view">4.3.1 Orthographic View<a class="headerlink" href="#431-orthographic-view" title="Permanent link">&para;</a></h4>
 <p>在正交投影中，物体上的所有点通过平行线投影到平面上，因此所有 Viewing Ray 都具有相同的方向。虽然这里没有相机的概念，但是我们仍用 <span class="arithmatex">\(-\mathbf{w}\)</span> 表示 Viewing Ray 的方向。</p>
 <p>不是一般性的，成像平面可以认为过视点 <span class="arithmatex">\(\mathbf{e}\)</span> 且以 <span class="arithmatex">\(\mathbf{e}\)</span> 为原点，即 <span class="arithmatex">\(\mathbf{u},\mathbf{v}\)</span> 张成的平面。在这一平面上，可以用 <span class="arithmatex">\(\mathbf{u},\mathbf{v}\)</span> 作为基向量建立二维坐标。</p>
-<p>用 <span class="arithmatex">\((l,r,b,t)\)</span> 分别表示图像的四条边在成像平面上的位置：
-- 左边：<span class="arithmatex">\(\mathbf{e}+l\mathbf{u}\)</span>
-- 右边：<span class="arithmatex">\(\mathbf{e}+r\mathbf{u}\)</span>
-- 上边：<span class="arithmatex">\(\mathbf{e}+b\mathbf{v}\)</span>
+<p>用 <span class="arithmatex">\((l,r,b,t)\)</span> 分别表示图像的四条边在成像平面上的位置：<br />
+- 左边：<span class="arithmatex">\(\mathbf{e}+l\mathbf{u}\)</span><br />
+- 右边：<span class="arithmatex">\(\mathbf{e}+r\mathbf{u}\)</span><br />
+- 上边：<span class="arithmatex">\(\mathbf{e}+b\mathbf{v}\)</span><br />
 - 下边：<span class="arithmatex">\(\mathbf{e}+t\mathbf{v}\)</span></p>
-<p>接下来建立 <span class="arithmatex">\(n_{x}\times n_{y}\)</span> 的像素网格坐标到相机坐标系坐标的对应，坐标 <span class="arithmatex">\((i, j)\)</span> 的像素应该有相机坐标系下的坐标 <span class="arithmatex">\((u, v)\)</span> ：
-$$
-\begin{align}
-u  &amp; = l + \frac{r-l}{n_{x}} (i+0.5) \
-v  &amp; = b + \frac{t-b}{n_{y}}(j+0.5)
-\end{align}
+<p>接下来建立 <span class="arithmatex">\(n_{x}\times n_{y}\)</span> 的像素网格坐标到相机坐标系坐标的对应，坐标 <span class="arithmatex">\((i, j)\)</span> 的像素应该有相机坐标系下的坐标 <span class="arithmatex">\((u, v)\)</span> ：<br />
+$$<br />
+\begin{align}<br />
+u  &amp; = l + \frac{r-l}{n_{x}} (i+0.5) \<br />
+v  &amp; = b + \frac{t-b}{n_{y}}(j+0.5)<br />
+\end{align}<br />
 $$</p>
 <p>![[Pasted image 20260912142330.png]]</p>
 <p>在正交投影中， Viewing Ray 的起点可以简单的认为是像素点。</p>
-<p>综上 Viewing Ray：
-- Origin : <span class="arithmatex">\(\mathbf{e} + u\mathbf{u}+v\mathbf{v}\)</span> 
+<p>综上 Viewing Ray：<br />
+- Origin : <span class="arithmatex">\(\mathbf{e} + u\mathbf{u}+v\mathbf{v}\)</span> <br />
 - Direction : <span class="arithmatex">\(-\mathbf{w}\)</span> </p>
 <p>非正交的平行投影可以很自然的从正交情形推广得到，只需要区分投影方向 <span class="arithmatex">\(\mathbf{d}\)</span> 和 <span class="arithmatex">\(\mathbf{w}\)</span> 。</p>
 <h4 id="432-perspective-views">4.3.2 Perspective Views<a class="headerlink" href="#432-perspective-views" title="Permanent link">&para;</a></h4>
 <p>在透视投影中，成像平面与视点具有一定距离，称为 <strong>成像平面距离(Image Plane Distance)</strong> 或 <strong>焦距(Focal Length)</strong> ，记为 <span class="arithmatex">\(d\)</span> 。</p>
-<p>Viewing Ray : 
-- Origin : <span class="arithmatex">\(\mathbf{e}\)</span>
+<p>Viewing Ray : <br />
+- Origin : <span class="arithmatex">\(\mathbf{e}\)</span><br />
 - Direction : <span class="arithmatex">\(- d\mathbf{w} +u\mathbf{u} + v\mathbf{v}\)</span></p>
 <h3 id="44-ray-object-intersection">4.4 Ray-Object Intersection<a class="headerlink" href="#44-ray-object-intersection" title="Permanent link">&para;</a></h3>
 <p>得到 Viewing Ray <span class="arithmatex">\(\mathbf{p}(t) = \mathbf{e} + t \mathbf{d}\)</span> 后，计算第一个相交的物体。</p>
-<p>对于一个曲面 <span class="arithmatex">\(f(\mathbf{p})=0\)</span> ，计算与 Viewing Ray 的交相当于解方程
-$$
-f(\mathbf{e}+ t \mathbf{d}) =0
+<p>对于一个曲面 <span class="arithmatex">\(f(\mathbf{p})=0\)</span> ，计算与 Viewing Ray 的交相当于解方程<br />
+$$<br />
+f(\mathbf{e}+ t \mathbf{d}) =0<br />
 $$</p>
 <h4 id="441-ray-sphere-intersection">4.4.1 Ray-Sphere Intersection<a class="headerlink" href="#441-ray-sphere-intersection" title="Permanent link">&para;</a></h4>
-<p>给定球面
-$$
-(\mathbf{p}-\mathbf{c})^2 = R^2
+<p>给定球面<br />
+$$<br />
+(\mathbf{p}-\mathbf{c})^2 = R^2<br />
 $$</p>
-<p>代入 Viewing Ray 方程得到
-$$
-(\mathbf{e}+t\mathbf{d})^2 = R^2
-$$
+<p>代入 Viewing Ray 方程得到<br />
+$$<br />
+(\mathbf{e}+t\mathbf{d})^2 = R^2<br />
+$$<br />
 这是关于 <span class="arithmatex">\(t\)</span> 的一元二次方程，可以解得 <span class="arithmatex">\(t\)</span> 。</p>
 <h4 id="442-ray-triangle-intersection">4.4.2 Ray-Triangle Intersection<a class="headerlink" href="#442-ray-triangle-intersection" title="Permanent link">&para;</a></h4>
-<p>设三角形三个顶点为 <span class="arithmatex">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span> 。借助三角形重心坐标系建立方程
-$$
-\begin{cases}
-\mathbf{e} + t\mathbf{d} = \alpha \mathbf{a}+\beta \mathbf{b}+\gamma \mathbf{c} \
-\alpha + \beta + \gamma = 1 \
-0 &lt; \alpha,\beta, \gamma &lt;1
-\end{cases}
+<p>设三角形三个顶点为 <span class="arithmatex">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span> 。借助三角形重心坐标系建立方程<br />
+$$<br />
+\begin{cases}<br />
+\mathbf{e} + t\mathbf{d} = \alpha \mathbf{a}+\beta \mathbf{b}+\gamma \mathbf{c} \<br />
+\alpha + \beta + \gamma = 1 \<br />
+0 &lt; \alpha,\beta, \gamma &lt;1<br />
+\end{cases}<br />
 $$</p>
-<p>消元 <span class="arithmatex">\(\alpha\)</span> ，可以得到标准线性系统
-$$
-\begin{bmatrix}
-x_{a}-x_{b} &amp; x_{a}-x_{c} &amp; x_{d} \
-y_{a}-y_{b} &amp; y_{a}-y_{c} &amp; y_{d}  \
-z_{a}-z_{b} &amp; z_{a}-z_{c} &amp; z_{d} 
-\end{bmatrix}
-\begin{bmatrix}
-\beta \
-\gamma \
-t
-\end{bmatrix}
-=
-\begin{bmatrix}
-x_{a}-x_{e} \
-y_{a}-y_{e} \
-z_{a}-z_{e}
-\end{bmatrix}
+<p>消元 <span class="arithmatex">\(\alpha\)</span> ，可以得到标准线性系统<br />
+$$<br />
+\begin{bmatrix}<br />
+x_{a}-x_{b} &amp; x_{a}-x_{c} &amp; x_{d} \<br />
+y_{a}-y_{b} &amp; y_{a}-y_{c} &amp; y_{d}  \<br />
+z_{a}-z_{b} &amp; z_{a}-z_{c} &amp; z_{d} <br />
+\end{bmatrix}<br />
+\begin{bmatrix}<br />
+\beta \<br />
+\gamma \<br />
+t<br />
+\end{bmatrix}<br />
+=<br />
+\begin{bmatrix}<br />
+x_{a}-x_{e} \<br />
+y_{a}-y_{e} \<br />
+z_{a}-z_{e}<br />
+\end{bmatrix}<br />
 $$</p>
 <h4 id="443-ray-polygon-intersection">4.4.3 Ray-Polygon Intersection<a class="headerlink" href="#443-ray-polygon-intersection" title="Permanent link">&para;</a></h4>
 <p>给定平面多边形，设其有 <span class="arithmatex">\(m\)</span> 个顶点，依次为 <span class="arithmatex">\(\mathbf{p}_{1},\mathbf{p}_{2},\dots,\mathbf{p}_{m}\)</span> ，记平面法线为 <span class="arithmatex">\(\mathbf{n}\)</span> 。</p>
-<p>首先求 Viewing Ray 和平面的交点 <span class="arithmatex">\(\mathbf{p}=\mathbf{e}+t\mathbf{d}\)</span>，这可以通过解下述方程得到：
-$$
-(\mathbf{e}+t\mathbf{d}-\mathbf{p_{1}})\cdot \mathbf{n} = 0
+<p>首先求 Viewing Ray 和平面的交点 <span class="arithmatex">\(\mathbf{p}=\mathbf{e}+t\mathbf{d}\)</span>，这可以通过解下述方程得到：<br />
+$$<br />
+(\mathbf{e}+t\mathbf{d}-\mathbf{p_{1}})\cdot \mathbf{n} = 0<br />
 $$</p>
 <p>再判断 <span class="arithmatex">\(\mathbf{p}\)</span> 是否在多边形内。</p>
 <p>首先注意到平行投影不会改变 <span class="arithmatex">\(\mathbf{p}\)</span> 在形内还是形外，因此可以先将多边形投影到 xy-平面或别的平面上简化计算。接着以 <span class="arithmatex">\(\mathbf{p}\)</span> 的投影点为原点向任意方向引射线，若射线与多边形的边有奇数个交点，则 <span class="arithmatex">\(\mathbf{p}\)</span> 在形内，否则在形外。</p>
@@ -2303,52 +2303,52 @@ $$</p>
 <p>在决定像素的表面被确定后，像素值会根据 <strong>着色模型(Shading Model)</strong> 被计算。本节介绍两种简单的着色模型。</p>
 <p>大部分着色模型的原理是计算光线的反射，光从光源出发，经表面反射，抵达相机。</p>
 <h4 id="451-lambertian-shading">4.5.1 Lambertian Shading<a class="headerlink" href="#451-lambertian-shading" title="Permanent link">&para;</a></h4>
-<p>表面反射的光强与入射角的余弦值成正比。
-$$
-L = k_{d}I \max(0,\mathbf{n}\cdot \mathbf{l})
-$$
-其中
-- <span class="arithmatex">\(L\)</span> : 像素值
-- <span class="arithmatex">\(k_{d}\)</span> : 漫反射系数(Diffuse Coefficient)
-- <span class="arithmatex">\(I\)</span> : 光源强度
-- <span class="arithmatex">\(\mathbf{n}\)</span> : 表面单位法向量
+<p>表面反射的光强与入射角的余弦值成正比。<br />
+$$<br />
+L = k_{d}I \max(0,\mathbf{n}\cdot \mathbf{l})<br />
+$$<br />
+其中<br />
+- <span class="arithmatex">\(L\)</span> : 像素值<br />
+- <span class="arithmatex">\(k_{d}\)</span> : 漫反射系数(Diffuse Coefficient)<br />
+- <span class="arithmatex">\(I\)</span> : 光源强度<br />
+- <span class="arithmatex">\(\mathbf{n}\)</span> : 表面单位法向量<br />
 - <span class="arithmatex">\(\mathbf{l}\)</span> : 光源单位方向向量</p>
-<p>注意，每个颜色通道可能有单独的 <span class="arithmatex">\(k_{d}\)</span> 和 <span class="arithmatex">\(I\)</span> ，需要分开计算，或作为向量计算。
-$$
-\mathbf{L} = \mathbf{k_{d}} \odot \mathbf{I} \cdot \max(0,\mathbf{n}\cdot \mathbf{l})
+<p>注意，每个颜色通道可能有单独的 <span class="arithmatex">\(k_{d}\)</span> 和 <span class="arithmatex">\(I\)</span> ，需要分开计算，或作为向量计算。<br />
+$$<br />
+\mathbf{L} = \mathbf{k_{d}} \odot \mathbf{I} \cdot \max(0,\mathbf{n}\cdot \mathbf{l})<br />
 $$</p>
 <h4 id="452-blinn-phong-shading">4.5.2 Blinn-Phong Shading<a class="headerlink" href="#452-blinn-phong-shading" title="Permanent link">&para;</a></h4>
 <p>Lambertian Shading 只与光源、表面材质有关，与观察角度无关。但真实的表面会产生高光，这是因为光线比较集中的向某个方向反射，即镜面反射。</p>
-<p>根据镜面反射，当入射光线和视线关于法线对称时，观察到的光线最强，因此可以用视线 <span class="arithmatex">\(\mathbf{v}\)</span> 和镜面反射方向 <span class="arithmatex">\(\mathbf{r}\)</span> 的夹角余弦值来衡量观察到的反射强度，这就是 Phong 提出的镜面反射分量。
-$$
-C_{s} = k_{s}I \max(0, \mathbf{r}\cdot \mathbf{v})^p
-$$
+<p>根据镜面反射，当入射光线和视线关于法线对称时，观察到的光线最强，因此可以用视线 <span class="arithmatex">\(\mathbf{v}\)</span> 和镜面反射方向 <span class="arithmatex">\(\mathbf{r}\)</span> 的夹角余弦值来衡量观察到的反射强度，这就是 Phong 提出的镜面反射分量。<br />
+$$<br />
+C_{s} = k_{s}I \max(0, \mathbf{r}\cdot \mathbf{v})^p<br />
+$$<br />
 其中 <span class="arithmatex">\(p\)</span> 是高光指数，<span class="arithmatex">\(k_{s}\)</span> 是高光系数。</p>
-<p>Blinn 对该公式做了改进，记半程向量 <span class="arithmatex">\(\mathbf{h}= \frac{\mathbf{l}+\mathbf{v}}{||\mathbf{l}+\mathbf{v}||}\)</span> 表示入射光线 <span class="arithmatex">\(\mathbf{l}\)</span> 和视线 <span class="arithmatex">\(\mathbf{v}\)</span> 的角平分方向，则镜面反射分量可以写作
-$$
-C_{s} = k_{s}I \max(0, \mathbf{n}\cdot \mathbf{h})^p
+<p>Blinn 对该公式做了改进，记半程向量 <span class="arithmatex">\(\mathbf{h}= \frac{\mathbf{l}+\mathbf{v}}{||\mathbf{l}+\mathbf{v}||}\)</span> 表示入射光线 <span class="arithmatex">\(\mathbf{l}\)</span> 和视线 <span class="arithmatex">\(\mathbf{v}\)</span> 的角平分方向，则镜面反射分量可以写作<br />
+$$<br />
+C_{s} = k_{s}I \max(0, \mathbf{n}\cdot \mathbf{h})^p<br />
 $$</p>
-<p>完整的着色模型由两项构成
-- 漫反射分量(Diffuse Component)，即 Lambertian Shading
-- 高光分量(Specular Component)
-$$
-L=k_d I \max(0,\mathbf n\cdot\mathbf l)+k_s I \max(0,\mathbf n\cdot\mathbf h)^p
+<p>完整的着色模型由两项构成<br />
+- 漫反射分量(Diffuse Component)，即 Lambertian Shading<br />
+- 高光分量(Specular Component)<br />
+$$<br />
+L=k_d I \max(0,\mathbf n\cdot\mathbf l)+k_s I \max(0,\mathbf n\cdot\mathbf h)^p<br />
 $$</p>
 <h4 id="453-ambient-shading">4.5.3 Ambient Shading<a class="headerlink" href="#453-ambient-shading" title="Permanent link">&para;</a></h4>
-<p>设定一定的环境光分量(Ambient Component)，在没有光源照射的情况下也不会是纯黑的。
-$$
-C_{a} = k_{a}I_{a}
-$$
-其中
-- <span class="arithmatex">\(k_{a}\)</span> : 表面环境光系数，由表面材质决定
+<p>设定一定的环境光分量(Ambient Component)，在没有光源照射的情况下也不会是纯黑的。<br />
+$$<br />
+C_{a} = k_{a}I_{a}<br />
+$$<br />
+其中<br />
+- <span class="arithmatex">\(k_{a}\)</span> : 表面环境光系数，由表面材质决定<br />
 - <span class="arithmatex">\(I_{a}\)</span> : 环境光强度，由环境决定</p>
 <h4 id="454-multiple-point-lights">4.5.4 Multiple Point Lights<a class="headerlink" href="#454-multiple-point-lights" title="Permanent link">&para;</a></h4>
-<p>多光源情形可以分解为单光源情形的简单叠加
-$$
-L = k_{a}I_{a} + \sum_{i=1}^N [k_{d}I_{i}\max(0,\mathbf{n}\cdot \mathbf{l}<em s="s">{i})+k</em>)^p]
-$$}I_{i}\max(0,\mathbf{n}\cdot \mathbf{h}_{i</p>
+<p>多光源情形可以分解为单光源情形的简单叠加<br />
+$$<br />
+L = k_{a}I_{a} + \sum_{i=1}^N [k_{d}I_{i}\max(0,\mathbf{n}\cdot \mathbf{l}<em s="s">{i})+k</em>)^p]}I_{i}\max(0,\mathbf{n}\cdot \mathbf{h}_{i<br />
+$$</p>
 <h3 id="46-a-ray-tracing-program">4.6 A Ray-Tracing Program<a class="headerlink" href="#46-a-ray-tracing-program" title="Permanent link">&para;</a></h3>
-<p>通过上述内容，可以写出光追算法
+<p>通过上述内容，可以写出光追算法<br />
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>for each pixel do 
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    compute viewing ray 
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    if (ray hits an object with t ∈ [0, ∞)) then 
@@ -2359,7 +2359,7 @@ $$}I_{i}\max(0,\mathbf{n}\cdot \mathbf{h}_{i</p>
 </code></pre></div></p>
 <h4 id="461-object-oriented-ray-tracing-program">4.6.1 Object-Oriented Ray-Tracing Program<a class="headerlink" href="#461-object-oriented-ray-tracing-program" title="Permanent link">&para;</a></h4>
 <p>OOP 的思想将事物组织为类，例如 Surface 类派生 Triangle、Sphere、Group 类等。</p>
-<p>所有可以与 Viewing Ray 相交的事物都可以被抽象为 <code>Surface</code> 类，这一类的公共方法 <code>hit</code> 判断是否与 Viewing Ray 碰撞，并返回碰撞记录。
+<p>所有可以与 Viewing Ray 相交的事物都可以被抽象为 <code>Surface</code> 类，这一类的公共方法 <code>hit</code> 判断是否与 Viewing Ray 碰撞，并返回碰撞记录。<br />
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Surface</span><span class="p">{</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="cm">/** </span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cm">    求 Viewing Ray 和 Surface 的交点，参数范围 [t0, t1)</span>
@@ -2395,14 +2395,14 @@ $$}I_{i}\max(0,\mathbf{n}\cdot \mathbf{h}_{i</p>
 <a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p">}</span>
 </code></pre></div>
 <p><code>Box</code> 类是边与坐标轴平行的立方体，通过对角顶点可以唯一确定一个 axis-aligned bounding box 。</p>
-<p>球面实现 <code>bounding_box()</code>
+<p>球面实现 <code>bounding_box()</code><br />
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">Box</span><span class="w"> </span><span class="nf">Sphere::bounding_box</span><span class="p">(){</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="n">Vector3</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">center</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Vector3</span><span class="p">(</span><span class="n">radius</span><span class="p">,</span><span class="w"> </span><span class="n">radius</span><span class="p">,</span><span class="w"> </span><span class="n">radius</span><span class="p">);</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">Vector3</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">center</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Cector3</span><span class="p">(</span><span class="n">radius</span><span class="p">,</span><span class="w"> </span><span class="n">radius</span><span class="p">,</span><span class="w"> </span><span class="n">radius</span><span class="p">);</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Box</span><span class="p">(</span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="n">max</span><span class="p">)</span>
 <a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">}</span>
 </code></pre></div></p>
-<p><code>Material</code> 类封装材质，包括漫反射系数、镜面反射系数等等。
+<p><code>Material</code> 类封装材质，包括漫反射系数、镜面反射系数等等。<br />
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Material</span><span class="p">{</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">ka</span><span class="p">;</span><span class="w">   </span><span class="c1">// 环境光系数</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">kd</span><span class="p">;</span><span class="w">   </span><span class="c1">// 漫反射系数</span>
@@ -2412,9 +2412,9 @@ $$}I_{i}\max(0,\mathbf{n}\cdot \mathbf{h}_{i</p>
 </code></pre></div></p>
 <h3 id="47-shadows">4.7 Shadows<a class="headerlink" href="#47-shadows" title="Permanent link">&para;</a></h3>
 <p>求出像素点 Viewing Ray 与表面的交点后，需要判断这些交点的阴影。其余表面点的阴影并不会反映到像素上。</p>
-<p>阴影与着色类似。从表面点 <span class="arithmatex">\(\mathbf{p}\)</span> 出发，向光源方向 <span class="arithmatex">\(\mathbf{l}\)</span> 引射线 <span class="arithmatex">\(\mathbf{p}+t\mathbf{l}\)</span> ，这被称为 Shadow Ray 。若 Shadow Ray 在到达光源前与别的表面相交，则该点有阴影。
-- 与 Viewing Ray 的区别
-    - Viewing Ray 从相机出发，指向像素点
+<p>阴影与着色类似。从表面点 <span class="arithmatex">\(\mathbf{p}\)</span> 出发，向光源方向 <span class="arithmatex">\(\mathbf{l}\)</span> 引射线 <span class="arithmatex">\(\mathbf{p}+t\mathbf{l}\)</span> ，这被称为 Shadow Ray 。若 Shadow Ray 在到达光源前与别的表面相交，则该点有阴影。<br />
+- 与 Viewing Ray 的区别<br />
+    - Viewing Ray 从相机出发，指向像素点<br />
     - Shadow Ray 从表面点出发，指向光源</p>
 <ul>
 <li><strong>自相交阴影</strong> <ul>
@@ -2423,7 +2423,7 @@ $$}I_{i}\max(0,\mathbf{n}\cdot \mathbf{h}_{i</p>
 </ul>
 </li>
 </ul>
-<p>Blinn-Phong Lighting + Shadow Ray
+<p>Blinn-Phong Lighting + Shadow Ray<br />
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">raycolor</span><span class="p">(</span><span class="n">r</span><span class="p">:</span> <span class="n">Ray</span><span class="p">,</span> <span class="n">t0</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">t1</span><span class="p">:</span> <span class="nb">float</span><span class="p">):</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="n">rec</span><span class="p">:</span> <span class="n">HitRecord</span>             <span class="c1"># viewing ray hit record</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">shadow_rec</span><span class="p">:</span> <span class="n">HitRecord</span>            <span class="c1"># shadow ray hit record</span>
@@ -2445,29 +2445,29 @@ $$}I_{i}\max(0,\mathbf{n}\cdot \mathbf{h}_{i</p>
 <a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>        <span class="k">return</span> <span class="n">c</span>
 <a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>    <span class="k">else</span><span class="p">:</span>
 <a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>        <span class="k">return</span> <span class="n">background</span><span class="o">-</span><span class="n">color</span>
-</code></pre></div>
-- <code>scene</code> 指整个场景，<code>scene.hit(r)</code> 会遍历场景中的所有物体，并返回第一个碰撞点
-- <code>normalize()</code> 用于单位化向量
-- <code>r.d</code> 从相机指向像素
-- <code>l</code> 是光源方向
-- 只要有物体，无论是否被遮蔽，都至少有环境光分量
+</code></pre></div><br />
+- <code>scene</code> 指整个场景，<code>scene.hit(r)</code> 会遍历场景中的所有物体，并返回第一个碰撞点<br />
+- <code>normalize()</code> 用于单位化向量<br />
+- <code>r.d</code> 从相机指向像素<br />
+- <code>l</code> 是光源方向<br />
+- 只要有物体，无论是否被遮蔽，都至少有环境光分量<br />
 - 这一算法只考虑表面直接接收光源光线，而未考虑反射后的光线。考虑后者的光追算法被称为 <strong>全局光照(Global Illumination)</strong></p>
 <h3 id="48-ideal-specular-reflection">4.8 Ideal Specular Reflection<a class="headerlink" href="#48-ideal-specular-reflection" title="Permanent link">&para;</a></h3>
 <p>上一节中的算法只考虑了光源对物体表面的直接着色，但物体表面反射的光线同样能对别的表面着色，这被称为 <strong>间接光照(Indirect Illumination)</strong>。因此引入理想镜面反射。</p>
-<p>Viewing Ray 方向 <span class="arithmatex">\(\mathbf{d}\)</span> 从相机指向像素，也指向表面交点 <span class="arithmatex">\(\mathbf{p}\)</span> 。光线在表面反射可以逆向考虑为 Viewing Ray 在表面反射，这一反射视线方向为
-$$
-\mathbf{r} = \mathbf{d} - 2(\mathbf{d}\cdot \mathbf{n})\mathbf{d}
-$$
+<p>Viewing Ray 方向 <span class="arithmatex">\(\mathbf{d}\)</span> 从相机指向像素，也指向表面交点 <span class="arithmatex">\(\mathbf{p}\)</span> 。光线在表面反射可以逆向考虑为 Viewing Ray 在表面反射，这一反射视线方向为<br />
+$$<br />
+\mathbf{r} = \mathbf{d} - 2(\mathbf{d}\cdot \mathbf{n})\mathbf{d}<br />
+$$<br />
 其中 <span class="arithmatex">\(\mathbf{n}\)</span> 是表面法线。</p>
 <p>反射视线参数方程为 <span class="arithmatex">\(\mathbf{p}+s\mathbf{r}\)</span> 。这一反射视线若与物体碰撞，则贡献颜色，计算方法可以直接沿用 <code>raycolor()</code> 。每一次反射光强会衰减，不同颜色的衰减系数不同，记为 <span class="arithmatex">\(k_{m}\)</span> 。</p>
-<p>加入新的贡献：
-$$
-C = C + \mathrm{raycolor}(\mathbf{p}+s\mathbf{r},\epsilon,\infty)
+<p>加入新的贡献：<br />
+$$<br />
+C = C + \mathrm{raycolor}(\mathbf{p}+s\mathbf{r},\epsilon,\infty)<br />
 $$</p>
 <p>注意这一公式是递归的，每一次反射视线的计算都可能引入新的反射视线，递归终点是反射视线不与物体发生碰撞。</p>
 <p>通常设置最大递归深度，以避免无限反射。</p>
 <h2 id="5-linear-algebra">5 Linear Algebra<a class="headerlink" href="#5-linear-algebra" title="Permanent link">&para;</a></h2>
-<p>本章回顾一些线性代数知识。
+<p>本章回顾一些线性代数知识。<br />
 - 采用列主序向量</p>
 <h3 id="51-determinants">5.1 Determinants<a class="headerlink" href="#51-determinants" title="Permanent link">&para;</a></h3>
 <p>给定二维向量 <span class="arithmatex">\(\mathbf{a}, \mathbf{b}\)</span> ，行列式 <span class="arithmatex">\(|\mathbf{a}\ \mathbf{b}|\)</span> 可以表示 <span class="arithmatex">\(\mathbf{a}\)</span> 和 <span class="arithmatex">\(\mathbf{b}\)</span> 张成的三角形面积。这是有向面积，若 <span class="arithmatex">\(\mathbf{a}\)</span> 到 <span class="arithmatex">\(\mathbf{b}\)</span> 为逆时针，则符号为正，否则为负。</p>
@@ -2496,11 +2496,11 @@ $$</p>
 <li>行列式展开</li>
 </ul>
 <h3 id="53-computing-with-matrices-and-determinants">5.3 Computing with Matrices and Determinants<a class="headerlink" href="#53-computing-with-matrices-and-determinants" title="Permanent link">&para;</a></h3>
-<p>三维向量 <span class="arithmatex">\(\mathbf{a},\mathbf{b},\mathbf{c},\mathbf{d}\)</span> 共面等价于
-$$
-\begin{vmatrix}
-\mathbf{a}-\mathbf{d} &amp; \mathbf{b}-\mathbf{d} &amp; \mathbf{c}-\mathbf{d}
-\end{vmatrix}=0
+<p>三维向量 <span class="arithmatex">\(\mathbf{a},\mathbf{b},\mathbf{c},\mathbf{d}\)</span> 共面等价于<br />
+$$<br />
+\begin{vmatrix}<br />
+\mathbf{a}-\mathbf{d} &amp; \mathbf{b}-\mathbf{d} &amp; \mathbf{c}-\mathbf{d}<br />
+\end{vmatrix}=0<br />
 $$</p>
 <ul>
 <li>
@@ -2517,9 +2517,9 @@ $$</p>
 <li>线性系统(Linear System)</li>
 </ul>
 <h3 id="54-eigenvalues-and-matrix-diagonalization">5.4 Eigenvalues and Matrix Diagonalization<a class="headerlink" href="#54-eigenvalues-and-matrix-diagonalization" title="Permanent link">&para;</a></h3>
-<p>特征值(Eigenvalues) 与特征向量(Eigenvectors)
-$$
-A \mathbf{v} = \lambda \mathbf{v}
+<p>特征值(Eigenvalues) 与特征向量(Eigenvectors)<br />
+$$<br />
+A \mathbf{v} = \lambda \mathbf{v}<br />
 $$</p>
 <ul>
 <li>对称矩阵（厄米矩阵）必然可以对角化，且有一组正交特征向量</li>
@@ -2576,13 +2576,13 @@ $$</p>
 </ul>
 </li>
 </ul>
-<p>旋转矩阵
-$$
-R(\theta)=\begin{bmatrix}\cos\theta &amp; -\sin\theta\\sin\theta &amp; \cos\theta\end{bmatrix}
-$$
-可以分解成：
-$$
-R(\theta)=\begin{bmatrix}1 &amp; -\tan(\theta/2)\0 &amp; 1\end{bmatrix}\begin{bmatrix}1 &amp; 0\\sin\theta &amp; 1\end{bmatrix}\begin{bmatrix}1 &amp; -\tan(\theta/2)\0 &amp; 1\end{bmatrix}
+<p>旋转矩阵<br />
+$$<br />
+R(\theta)=\begin{bmatrix}\cos\theta &amp; -\sin\theta\\sin\theta &amp; \cos\theta\end{bmatrix}<br />
+$$<br />
+可以分解成：<br />
+$$<br />
+R(\theta)=\begin{bmatrix}1 &amp; -\tan(\theta/2)\0 &amp; 1\end{bmatrix}\begin{bmatrix}1 &amp; 0\\sin\theta &amp; 1\end{bmatrix}\begin{bmatrix}1 &amp; -\tan(\theta/2)\0 &amp; 1\end{bmatrix}<br />
 $$</p>
 
 
